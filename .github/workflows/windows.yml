@@ -12,7 +12,7 @@ jobs:
       matrix:
         include:
           # Windows Server 2025 + Visual Studio 2022
-          - name: "Windows Server 2025 + Visual Studio 2019"
+          - name: "Windows Server 2025 + Visual Studio 2022"
             os: windows-2025
           # Windows Server 2022 + Visual Studio 2022
           - name: "Windows Server 2022 + Visual Studio 2022"
@@ -30,4 +30,4 @@ jobs:
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v2
     - name: Build
-      run: cd build && MSBuild.exe sqlite.sln /p:Configuration=Release
+      run: cd build && MSBuild.exe simple-sqlite-cpp.sln /p:Configuration=Release
