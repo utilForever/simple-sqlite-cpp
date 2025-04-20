@@ -31,11 +31,6 @@ jobs:
             os: macos-15
             compiler: gcc
             version: "13"
-          # macOS 15 + gcc-12
-          - name: "macOS 15 + gcc-12"
-            os: macos-15
-            compiler: gcc
-            version: "12"
 
     runs-on: ${{ matrix.os }}
     name: 🍎 Build - ${{ matrix.name }}
